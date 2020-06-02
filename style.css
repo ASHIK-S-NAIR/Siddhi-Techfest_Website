@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Brandon Grotesque','brandon-grotesque',Helvetica,sans-serif;
     background-color: #000000;
+    color: #ffffff;
 }
 
 *{
@@ -10,4 +11,91 @@ body{
     padding: 0; 
     box-sizing: border-box;
 }
+
+/* navbar starts */
+
+nav{
+    width: 100%;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    position: relative;
+    border: 1px solid white;
+}
+
+nav .logo{
+    width: 125px;
+    height: auto;
+}
+
+nav .nav-links{
+    position: absolute;
+    list-style-type: none;
+    display: inline-block;
+    left:250px;
+    top: 38px;
+    height: 30px;
+    border: 1px solid white;
+}
+
+nav .nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    display: block;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+/* SideMenu starts */
+
+nav #mainbox{
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #000000;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.sidemenu a {
+    padding: 8px 60px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidemenu a:hover{
+    color: gray;
+}
+
+.sidemenu .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 32px;
+}
+/* SideMenu ends */
+
+
+/* navbar ends */
 
