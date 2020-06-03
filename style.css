@@ -9,7 +9,7 @@ body{
 *{
     margin: 0;
     padding: 0; 
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 /* navbar starts */
@@ -21,7 +21,9 @@ nav{
     padding-right: 30px;
     align-items: center;
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
 }
 
 nav .logo{
@@ -36,7 +38,7 @@ nav .nav-links{
     left:250px;
     top: 38px;
     height: 30px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 nav .nav-links li{
@@ -56,11 +58,67 @@ nav .nav-links li a {
 
 /* SideMenu starts */
 
-nav #mainbox{
+/* nav #mainbox{
     font-size: 24px;
     cursor: pointer;
+    margin-right: 20px;
+} */
+
+.menu-btn{
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    /* border: 1px solid white; */
+}
+
+.menu-btn-handburger{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* border-radius: 5px; */
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-handburger::before,
+.menu-btn-handburger::after{
+    content: '';
     position: absolute;
-    right: 30px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* border-radius: 5px; */
+    box-shadow: rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-handburger::before{
+    transform: translateY(-4.5px);
+}
+
+.menu-btn-handburger::after{
+    transform: translateY(4.5px);
+}
+
+.menu-btn.open .menu-btn-handburger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-handburger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-handburger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .sidemenu{
@@ -69,22 +127,35 @@ nav #mainbox{
     right: 0px;
     height: 100%;
     width: 0px;
+    padding-top: 80px;
+    padding-right: 50px;
+    border: 1px solid white;
     background-color: #000000;
+    text-align: right;
     z-index: 1;
-    padding-top: 100px;
     overflow-x: hidden;
+    transition: all 0.5s;
 }
 
+
+
 .sidemenu a {
-    padding: 8px 60px 8px 8px;
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     display: block;
+    padding: 5px 0;
+    width: 100%;
+    font: 16px/40px DINPro-Regular,Arial,Verdana,sans-serif;
+    margin-right: 50px;
 }
 
 .sidemenu a:hover{
     color: gray;
+}
+
+.sidemenu .close-out{
+    padding-right: 0px;
 }
 
 .sidemenu .closebtn{
