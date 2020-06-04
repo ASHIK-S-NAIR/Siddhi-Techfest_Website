@@ -12,10 +12,10 @@ menuBtn.addEventListener('click', () => {
     if(!menuOpen){
         menuBtn.classList.add('open');
         menuOpen=true;
-        document.getElementById('menu').style.width = "350px";
+        document.getElementById('menu').style.right="0px";
     }else{
         menuBtn.classList.remove('open');
         menuOpen=false;
-        document.getElementById('menu').style.width = "0px";
+        document.getElementById('menu').style.right="-300px";
     }
 });
