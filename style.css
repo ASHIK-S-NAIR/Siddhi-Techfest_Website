@@ -21,7 +21,6 @@ nav{
     padding-right: 30px;
     align-items: center;
     position: relative;
-    /* border: 1px solid white; */
     display: flex;
     justify-content: space-between;
 }
@@ -38,7 +37,6 @@ nav .nav-links{
     left:275px;
     top: 38px;
     height: 30px;
-    /* border: 1px solid white; */
 }
 
 nav .nav-links li{
@@ -75,12 +73,6 @@ nav .nav-links li a:hover::after{
 
 /* SideMenu starts */
 
-/* nav #mainbox{
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 20px;
-} */
-
 .menu-btn{
     position: relative;
     height: 16px;
@@ -92,14 +84,12 @@ nav .nav-links li a:hover::after{
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     z-index: 2;
-    /* border: 1px solid white; */
 }
 
 .menu-btn-handburger{
     width: 100%;
     height: 2px;
     background-color: #fff;
-    /* border-radius: 5px; */
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
 }
@@ -111,7 +101,6 @@ nav .nav-links li a:hover::after{
     width: 100%;
     height: 2px;
     background-color: #fff;
-    /* border-radius: 5px; */
     box-shadow: rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
 }
@@ -146,7 +135,6 @@ nav .nav-links li a:hover::after{
     width: 300px;
     padding-top: 80px;
     padding-right: 50px;
-    /* border: 1px solid white; */
     background-color: #000000;
     text-align: right;
     z-index: 1;
