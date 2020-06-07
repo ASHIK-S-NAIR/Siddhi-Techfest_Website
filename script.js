@@ -16,6 +16,6 @@ menuBtn.addEventListener('click', () => {
     }else{
         menuBtn.classList.remove('open');
         menuOpen=false;
-        document.getElementById('menu').style.right="-300px";
+        document.getElementById('menu').style.right="-350px";
     }
 });
