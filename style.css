@@ -130,11 +130,12 @@ nav .nav-links li a:hover::after{
 .sidemenu{
     position: fixed;
     top: 0px;
-    right: -300px;
+    right: -350px;
     height: 100%;
-    width: 300px;
+    width: 350px;
     padding-top: 80px;
     padding-right: 50px;
+    padding-left: 50px;
     background-color: #000000;
     text-align: right;
     z-index: 1;
@@ -164,6 +165,10 @@ nav .nav-links li a:hover::after{
     color: gray;
 }
 
+.sidemenu .responsive-close-out{
+    display: none;
+}
+
 .sidemenu .close-out{
     padding-right: 0px;
 }
@@ -179,4 +184,75 @@ nav .nav-links li a:hover::after{
 
 
 /* navbar ends */
+
+
+/* media query start */
+
+/* media query for reponsive(1040px) start */
+
+@media screen and (max-width: 1040px){
+    nav{
+        width: 100%;
+        height: 90px;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .logo{
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+
+    nav .nav-links{
+        display: none;
+    }
+
+    .sidemenu .responsive-close-out{
+        display: block;
+    }
+
+    .menu-btn{
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        top: 2rem;
+        right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
+    }
+
+}
+/* media query for responsive(1040px) start */
+
+
+/* media query for tablet(768px) start */
+
+@media screen and (max-width:768px){
+    .menu-btn{
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        top: 2rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
+    }
+}
+
+/* media query for tablet(768px) end */
+
+/* media query end */
 
